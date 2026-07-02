@@ -50,16 +50,18 @@ export const InsightsSection = () => {
             04 // INSIGHTS
           </span>
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 md:gap-12">
-            <h2 className="text-3xl md:text-4xl lg:text-[3rem] font-sans tracking-tight leading-[1.1] text-white max-w-2xl flex-1">
-              Latest Thinking
-            </h2>
-            <div className="flex flex-col items-start gap-6 max-w-md md:mt-4 text-left">
-              <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6]">
-                Perspectives on ownership, equity design, and governance.
-              </p>
+            <div className="max-w-2xl flex-1 flex flex-col items-start gap-8">
+              <h2 className="text-3xl md:text-4xl lg:text-[3rem] font-sans tracking-tight leading-[1.1] text-white">
+                Latest Thinking
+              </h2>
               <AnimatedButton variant="text" className="border border-white/20 px-8 py-4 whitespace-nowrap">
                 View All Insights
               </AnimatedButton>
+            </div>
+            <div className="flex flex-col items-start max-w-md md:mt-4 text-left">
+              <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6]">
+                Perspectives on ownership, equity design, and governance.
+              </p>
             </div>
           </div>
         </motion.div>
