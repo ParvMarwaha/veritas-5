@@ -55,7 +55,7 @@ export const ImpactSection = () => {
               Numbers that define success.
             </h2>
             <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6] max-w-md md:mt-4 text-left">
-              Delivering structural clarity and long-term value creation.
+              Delivering structural clarity, mitigating complex regulatory risks, and driving sustainable, long-term value creation across all stages of your company's growth.
             </p>
           </div>
         </motion.div>
