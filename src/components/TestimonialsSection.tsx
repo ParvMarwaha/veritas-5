@@ -96,7 +96,7 @@ export const TestimonialsSection = () => {
         {/* The Divider / Progress Line */}
         <motion.div variants={itemVariants} className="w-full h-[1px] bg-white/20 mb-12 relative overflow-hidden">
           <div 
-            className="absolute top-0 left-0 h-full bg-[#D02717] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" 
+            className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#D02717] to-[#DDA76D] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" 
             style={{ width: `${((activeIndex + 1) / testimonials.length) * 100}%` }}
           />
         </motion.div>
@@ -124,11 +124,11 @@ export const TestimonialsSection = () => {
 
               {/* Bottom Footer: Author Info & Nav Arrows */}
               <div className="flex items-end justify-between mt-12 md:mt-0 pb-8">
-                <div className="flex flex-col">
-                  <span className={`text-[1.125rem] md:text-[1.25rem] font-sans tracking-tight mb-1 transition-colors duration-700 ${isHovered ? 'text-white' : 'text-white/80'}`}>
+                <div className="flex flex-col border-l border-[#D02717] pl-5">
+                  <span className={`text-[1.25rem] md:text-[1.5rem] font-sans tracking-tight mb-1 transition-colors duration-700 ${isHovered ? 'text-white' : 'text-white/90'}`}>
                     {testimonials[activeIndex].name}
                   </span>
-                  <span className="text-[1rem] font-sans tracking-tight text-white/50">
+                  <span className="text-[1rem] md:text-[1.125rem] font-sans tracking-tight text-white/50">
                     {testimonials[activeIndex].title}, {testimonials[activeIndex].company}
                   </span>
                 </div>
