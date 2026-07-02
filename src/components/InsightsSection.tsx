@@ -45,20 +45,19 @@ export const InsightsSection = () => {
         variants={containerVariants}
       >
         
-        {/* Header */}
         <motion.div variants={itemVariants} className="mb-16 flex flex-col text-left w-full">
           <span className="block text-[#D02717] font-mono text-[0.875rem] uppercase tracking-widest mb-4">
             04 // INSIGHTS
           </span>
-          <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 md:gap-12">
-            <h2 className="text-3xl md:text-4xl lg:text-[3rem] font-sans tracking-tight leading-[1.1] text-white max-w-2xl flex-1">
+          <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 md:gap-8 lg:gap-12 w-full">
+            <h2 className="text-3xl md:text-4xl lg:text-[3rem] font-sans tracking-tight leading-[1.1] text-white shrink-0">
               Latest Thinking
             </h2>
-            <div className="flex flex-col items-start md:items-end gap-6 max-w-md md:mt-4 text-left md:text-right">
-              <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6]">
-                Perspectives on ownership, equity design, and governance.
-              </p>
-              <AnimatedButton variant="text" className="border border-white/20 px-8 py-4 whitespace-nowrap shrink-0">
+            <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6] max-w-md md:mt-4 text-left flex-1">
+              Perspectives on ownership, equity design, and governance.
+            </p>
+            <div className="shrink-0 md:mt-2">
+              <AnimatedButton variant="text" className="border border-white/20 px-8 py-4 whitespace-nowrap">
                 View All Insights
               </AnimatedButton>
             </div>
