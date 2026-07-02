@@ -131,12 +131,12 @@ export const ImpactSection = () => {
                 "isthara_corporate_logo_2.png",
                 "prepladderLogo.e4168f6e1bc6f2efe053.png"
               ].map((logo, index) => (
-                <div key={index} className="relative w-48 md:w-56 h-16 md:h-20 grayscale brightness-200 invert opacity-60 hover:grayscale-0 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-500 cursor-pointer">
+                <div key={index} className="relative w-56 md:w-72 h-20 md:h-28 grayscale brightness-200 invert opacity-60 hover:grayscale-0 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-500 cursor-pointer">
                   <Image
                     src={`/logos/${logo}`}
                     alt={`Partner Logo ${index + 1}`}
                     fill
-                    className="object-contain"
+                    className="object-contain scale-125"
                   />
                 </div>
               ))}
