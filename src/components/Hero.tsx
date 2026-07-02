@@ -17,7 +17,7 @@ export const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 flex-1 flex flex-col justify-center items-center text-white px-4 pb-20">
         {/* The bordered container for the heading */}
-        <div className="relative w-full max-w-3xl xl:max-w-[1200px] flex flex-col items-center justify-center py-16 px-4 md:px-12">
+        <div className="relative w-full max-w-3xl xl:max-w-[75rem] flex flex-col items-center justify-center py-16 px-4 md:px-12">
           
           {/* Animated Brackets Container */}
           <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 animate-expand-brackets">
@@ -45,7 +45,7 @@ export const Hero = () => {
           </div>
         </div>
         
-        <p className="mt-16 text-base md:text-lg text-center text-white/90 font-sans tracking-tight leading-relaxed whitespace-nowrap animate-reveal-up delay-2400">
+        <p className="mt-16 text-[1rem] md:text-[1.125rem] text-center text-white/90 font-sans tracking-tight leading-relaxed whitespace-nowrap animate-reveal-up delay-2400">
           We help leaders design ownership programs that attract talent, align incentives, and create value.
         </p>
       </div>

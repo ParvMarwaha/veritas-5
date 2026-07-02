@@ -41,7 +41,7 @@ const textVariants = {
 
 export const CTASection = () => {
   return (
-    <section className="relative z-20 w-full bg-[#111] text-white py-40 px-6 md:px-16 flex flex-col items-center justify-center overflow-hidden border-t border-white/5">
+    <section className="relative z-20 w-full bg-[#111] text-white py-20 md:py-28 px-6 md:px-12 flex flex-col items-center justify-center overflow-hidden border-t border-white/5">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -56,7 +56,7 @@ export const CTASection = () => {
       </motion.div>
 
       {/* The bordered container for the CTA */}
-      <div className="relative w-full max-w-3xl xl:max-w-[850px] flex flex-col items-center justify-center py-16 px-4 md:px-12 z-10">
+      <div className="relative w-full max-w-3xl xl:max-w-[53.125rem] flex flex-col items-center justify-center py-16 px-4 md:px-12 z-10">
         {/* Animated Brackets Container */}
         <motion.div variants={bracketVariants} className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2">
           {/* Left Bracket */}
@@ -72,10 +72,10 @@ export const CTASection = () => {
         </motion.div>
 
         <motion.div variants={textVariants} className="relative z-10 flex flex-col items-center text-center mx-auto">
-          <h3 className="text-2xl md:text-2xl lg:text-[54px] font-serif tracking-tight leading-[1.1] mb-10 text-white md:whitespace-nowrap">
+          <h3 className="text-3xl md:text-4xl lg:text-[3rem] font-serif tracking-tight leading-[1.1] mb-10 text-white md:whitespace-nowrap">
             Ready to Redefine Your Equity Structure?
           </h3>
-          <p className="text-[15px] md:text-[20px] text-white/70 leading-[1.6] max-w-[600px] tracking-tight font-sans mb-16">
+          <p className="text-[1rem] md:text-[1.125rem] text-white/70 leading-[1.6] max-w-[37.5rem] tracking-tight font-sans mb-16">
             Join the vanguard of modern organizations building a sustainable culture of ownership and trust.
           </p>
           

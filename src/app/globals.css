@@ -28,6 +28,7 @@ html, body {
   width: 100vw;
   overflow-x: clip;
   background-color: #111111;
+  font-size: 14.4px;
 }
 
 @keyframes fade-in-up {

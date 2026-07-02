@@ -44,7 +44,7 @@ export const ScrollRevealSection = () => {
     <section ref={containerRef} className="relative z-10 w-full bg-[#111] text-white h-[400vh]">
       <div className="sticky top-0 w-full h-screen flex justify-center items-center px-6 md:px-16 overflow-hidden">
         <div 
-          className="relative max-w-[1200px] w-full mx-auto py-28 px-12 md:px-20 lg:px-32 flex items-center"
+          className="relative max-w-[75rem] w-full mx-auto py-28 px-12 md:px-20 lg:px-32 flex items-center"
           style={{ 
             transform: `translateY(${15 - (highlightProgress * 35)}vh)` 
           }}
@@ -70,7 +70,7 @@ export const ScrollRevealSection = () => {
 
           {/* Text Container */}
           <p 
-            className="text-xl md:text-2xl lg:text-[26px] leading-[1.7] font-light font-sans tracking-tight max-w-[1000px]"
+            className="text-xl md:text-2xl lg:text-[1.625rem] leading-[1.7] font-light font-sans tracking-tight max-w-[62.5rem]"
             style={{
               opacity: tEase,
               transform: `translateY(${(1 - tEase) * 40}px)`

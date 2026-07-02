@@ -21,13 +21,17 @@ export default function Home() {
       
       <div className="relative z-10 bg-[#111]">
         <ScrollRevealSection />
-        <ServicesSection />
-        <PillarsSection />
-        <ImpactSection />
-        <InsightsSection />
-        <TestimonialsSection />
-        <CTASection />
-        <Footer />
+        <div className="sticky top-0 z-0">
+          <ServicesSection />
+        </div>
+        <div className="relative z-10">
+          <PillarsSection />
+          <ImpactSection />
+          <InsightsSection />
+          <TestimonialsSection />
+          <CTASection />
+          <Footer />
+        </div>
       </div>
     </main>
   );

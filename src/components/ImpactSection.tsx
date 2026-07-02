@@ -43,63 +43,65 @@ export const ImpactSection = () => {
         />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1260px] mx-auto px-6 md:px-12 py-20 md:py-28">
+      <div className="relative z-10 w-full max-w-[78.75rem] mx-auto px-6 md:px-12 py-20 md:py-28">
 
-        {/* Massive Typographic Intro */}
-        <motion.div variants={itemVariants} className="mb-16">
-          <span className="block text-[#D02717] font-mono text-[15px] md:text-[15px] uppercase tracking-widest mb-6">
-            03 / Impact
+        {/* Header */}
+        <motion.div variants={itemVariants} className="mb-16 flex flex-col">
+          <span className="block text-[#D02717] font-mono text-[0.875rem] uppercase tracking-widest mb-4">
+            03 // OUR IMPACT
           </span>
-          <h2 className="text-2xl md:text-2xl lg:text-[48px] italic font-serif tracking-tight leading-[1.1] text-white max-w-3xl">
-            Business Outcomes
-          </h2>
-          <p className="mt-8 text-[15px] md:text-[15px] text-white/70 font-sans tracking-tight leading-[1.6] max-w-[600px]">
-            Most ownership programs are designed around compliance. The best ones are designed around measurable business impact.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 md:gap-12">
+            <h2 className="text-3xl md:text-4xl lg:text-[3rem] font-sans tracking-tight leading-[1.1] text-white max-w-2xl flex-1 text-left">
+              Numbers that define success.
+            </h2>
+            <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6] max-w-md md:mt-4 text-left">
+              Delivering structural clarity and long-term value creation.
+            </p>
+          </div>
         </motion.div>
       </div>
 
       {/* Brutalist Data Table Constrained */}
       <div className="relative z-10 w-full border-t border-b border-white/20 bg-[#111]">
-        <motion.div variants={itemVariants} className="max-w-[1260px] mx-auto w-full border-l border-r border-white/20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/20">
+        <motion.div variants={itemVariants} className="max-w-[78.75rem] mx-auto w-full border-l border-r border-white/20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/20">
 
-          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[180px] md:min-h-[200px] group hover:bg-white/[0.03] transition-colors duration-500">
-            <span className="text-white/40 font-mono text-[15px] md:text-[15px] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Volume</span>
+          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[11.25rem] md:min-h-[12.5rem] group hover:bg-white/[0.03] transition-colors duration-500">
+            <span className="text-white/40 font-mono text-[0.875rem] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Volume</span>
             <div>
-              <div className="text-[48px] md:text-[64px] font-mono tracking-tighter leading-none mb-4">
+              <div className="text-[3rem] md:text-[4rem] font-mono tracking-tighter leading-none mb-4">
                 1K<span className="text-[#D02717]">+</span>
               </div>
-              <div className="text-[15px] md:text-[15px] text-white/70 font-sans tracking-tight leading-[1.6]">ESOP Schemes Designed</div>
+              <div className="text-[0.9375rem] md:text-[1rem] text-white/70 font-sans tracking-tight leading-[1.6]">ESOP Schemes Designed</div>
             </div>
           </div>
 
-          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[180px] md:min-h-[200px] group hover:bg-white/[0.03] transition-colors duration-500">
-            <span className="text-white/40 font-mono text-[15px] md:text-[15px] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Standards</span>
+          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[11.25rem] md:min-h-[12.5rem] group hover:bg-white/[0.03] transition-colors duration-500">
+            <span className="text-white/40 font-mono text-[0.875rem] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Standards</span>
             <div>
-              <div className="text-[20px] md:text-[20px] font-mono tracking-tight leading-[1.2] mb-4">
+              <div className="text-[1.5rem] md:text-[1.75rem] font-mono tracking-tight leading-[1.2] mb-4">
                 Ind AS,<br />IAS 19,<br />US GAAP
               </div>
-              <div className="text-[15px] md:text-[15px] text-white/70 font-sans tracking-tight leading-[1.6]">Strictly Compliant</div>
+              <div className="text-[0.9375rem] md:text-[1rem] text-white/70 font-sans tracking-tight leading-[1.6]">Strictly Compliant</div>
             </div>
           </div>
 
-          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[180px] md:min-h-[200px] group hover:bg-white/[0.03] transition-colors duration-500">
-            <span className="text-white/40 font-mono text-[15px] md:text-[15px] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Reach</span>
+          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[11.25rem] md:min-h-[12.5rem] group hover:bg-white/[0.03] transition-colors duration-500">
+            <span className="text-white/40 font-mono text-[0.875rem] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Reach</span>
             <div>
-              <div className="text-[48px] md:text-[64px] font-mono tracking-tighter leading-none mb-4">
+              <div className="text-[3rem] md:text-[4rem] font-mono tracking-tighter leading-none mb-4">
                 50<span className="text-[#D02717]">+</span>
               </div>
-              <div className="text-[15px] md:text-[15px] text-white/70 font-sans tracking-tight leading-[1.6]">Global Sectors Served</div>
+              <div className="text-[0.9375rem] md:text-[1rem] text-white/70 font-sans tracking-tight leading-[1.6]">Global Sectors Served</div>
             </div>
           </div>
 
-          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[180px] md:min-h-[200px] group hover:bg-white/[0.03] transition-colors duration-500">
-            <span className="text-white/40 font-mono text-[15px] md:text-[15px] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Legacy</span>
+          <div className="p-6 md:p-8 flex flex-col justify-between min-h-[11.25rem] md:min-h-[12.5rem] group hover:bg-white/[0.03] transition-colors duration-500">
+            <span className="text-white/40 font-mono text-[0.875rem] uppercase tracking-widest mb-8 group-hover:text-white transition-colors duration-500">Legacy</span>
             <div>
-              <div className="text-[48px] md:text-[64px] font-mono tracking-tighter leading-none mb-4">
+              <div className="text-[3rem] md:text-[4rem] font-mono tracking-tighter leading-none mb-4">
                 20<span className="text-[#D02717]">+</span>
               </div>
-              <div className="text-[15px] md:text-[15px] text-white/70 font-sans tracking-tight leading-[1.6]">Years Actuarial Experience</div>
+              <div className="text-[0.9375rem] md:text-[1rem] text-white/70 font-sans tracking-tight leading-[1.6]">Years Actuarial Experience</div>
             </div>
           </div>
 

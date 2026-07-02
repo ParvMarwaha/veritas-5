@@ -68,10 +68,10 @@ export const NavigationOverlay: React.FC<NavigationOverlayProps> = ({ isOpen, on
                 className={`group relative flex items-end w-fit transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
                 style={{ transitionDelay: `${isOpen ? index * 80 : 0}ms` }}
               >
-                <span className="text-white/40 font-mono text-[16px] md:text-[16px] mr-6 md:mr-12 mb-3 md:mb-5 tracking-widest group-hover:text-[#D02717] group-hover:-translate-y-2 transition-all duration-500 ease-out">
+                <span className="text-white/40 font-mono text-[1rem] md:text-[1rem] mr-6 md:mr-12 mb-3 md:mb-5 tracking-widest group-hover:text-[#D02717] group-hover:-translate-y-2 transition-all duration-500 ease-out">
                   0{index + 1}
                 </span>
-                <span className="text-[42px] md:text-[64px] lg:text-[76px] font-serif tracking-tight text-white/70 group-hover:text-white group-hover:translate-x-4 transition-all duration-500 ease-out leading-[0.9]">
+                <span className="text-[2.625rem] md:text-[4rem] lg:text-[4.75rem] font-serif tracking-tight text-white/70 group-hover:text-white group-hover:translate-x-4 transition-all duration-500 ease-out leading-[0.9]">
                   {item}
                 </span>
               </a>
@@ -81,7 +81,7 @@ export const NavigationOverlay: React.FC<NavigationOverlayProps> = ({ isOpen, on
       </div>
 
       {/* Right Panel (Solid Dark) */}
-      <div className="w-full md:w-[450px] lg:w-[500px] h-full bg-[#0a0a0a] flex flex-col justify-between pt-24 pb-12 px-12 border-l border-white/5">
+      <div className="w-full md:w-[28.125rem] lg:w-[31.25rem] h-full bg-[#0a0a0a] flex flex-col justify-between pt-24 pb-12 px-12 border-l border-white/5">
         {/* Close Button Desktop */}
         <button 
           onClick={onClose}
@@ -95,10 +95,10 @@ export const NavigationOverlay: React.FC<NavigationOverlayProps> = ({ isOpen, on
 
         {/* Promotional Quote */}
         <div className={`flex flex-col items-start mt-12 md:mt-24 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] delay-300 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-          <h3 className="text-white font-serif italic text-[28px] md:text-[32px] leading-[1.2] mb-6">
+          <h3 className="text-white font-serif italic text-[1.75rem] md:text-[2rem] leading-[1.2] mb-6">
             "Designing for true business outcomes."
           </h3>
-          <p className="text-white/70 font-sans text-[16px] md:text-[15px] leading-relaxed max-w-[320px]">
+          <p className="text-white/70 font-sans text-[1rem] md:text-[0.9375rem] leading-relaxed max-w-[20rem]">
             We help leaders design ownership programs that attract talent, align incentives, and create sustainable value for the long term.
           </p>
         </div>
@@ -106,15 +106,15 @@ export const NavigationOverlay: React.FC<NavigationOverlayProps> = ({ isOpen, on
         {/* Bottom Contact Info */}
         <div className={`grid grid-cols-2 gap-8 border-t border-white/10 pt-12 mt-12 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] delay-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
           <div className="flex flex-col space-y-6">
-            <h4 className="text-white/40 font-mono text-[11px] uppercase tracking-widest">Connect</h4>
-            <ul className="flex flex-col space-y-4 font-mono text-[15px] tracking-tight text-white/90">
+            <h4 className="text-white/40 font-mono text-[0.6875rem] uppercase tracking-widest">Connect</h4>
+            <ul className="flex flex-col space-y-4 font-mono text-[0.9375rem] tracking-tight text-white/90">
               <li><a href="#" className="hover:text-[#D02717] transition-colors">LinkedIn</a></li>
             </ul>
           </div>
           
           <div className="flex flex-col space-y-6">
-            <h4 className="text-white/40 font-mono text-[11px] uppercase tracking-widest">Contact Us</h4>
-            <ul className="flex flex-col space-y-4 font-mono text-[15px] tracking-tight text-white/90 leading-[1.6]">
+            <h4 className="text-white/40 font-mono text-[0.6875rem] uppercase tracking-widest">Contact Us</h4>
+            <ul className="flex flex-col space-y-4 font-mono text-[0.9375rem] tracking-tight text-white/90 leading-[1.6]">
               <li><a href="#" className="hover:text-[#D02717] transition-colors">contact@veritas.in</a></li>
               <li>+91 9560952022</li>
               <li>Gurugram, Haryana, India</li>

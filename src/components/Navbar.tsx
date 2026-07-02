@@ -72,20 +72,22 @@ export const Navbar = () => {
         {/* Dark blurred background that fades in when scrolled past top */}
         <div className={`absolute inset-0 bg-gradient-to-b from-[#111]/90 to-transparent backdrop-blur-md -z-10 transition-opacity duration-500 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}></div>
         
-        <div className="text-2xl italic font-serif tracking-tight">
-          Veritas
-        </div>
+        <a href="/" className="flex items-center">
+          <img src="/logo.png" alt="Veritas Logo" className="h-8 md:h-10 w-auto object-contain" />
+        </a>
         
-        <div className="flex items-center space-x-8 text-[15px] uppercase font-mono tracking-tight cursor-pointer">
+        <div className="flex items-center space-x-8 text-[0.9375rem] uppercase font-mono tracking-tight cursor-pointer">
           <AnimatedButton variant="text" className="px-0 py-0">
             Get in Touch
           </AnimatedButton>
           <div 
             onClick={() => setIsMenuOpen(true)}
-            className="w-6 h-2 flex flex-col justify-between items-end group cursor-pointer"
+            className="w-12 h-12 flex justify-center items-center group cursor-pointer -mr-3"
           >
-            <div className="w-full h-[1px] bg-white transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:w-1/2 group-hover:-translate-x-1"></div>
-            <div className="w-2/3 h-[1px] bg-white transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:w-full"></div>
+            <div className="w-6 h-2 flex flex-col justify-between items-end">
+              <div className="w-full h-[1px] bg-white transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:w-1/2 group-hover:-translate-x-1"></div>
+              <div className="w-2/3 h-[1px] bg-white transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:w-full"></div>
+            </div>
           </div>
         </div>
       </header>

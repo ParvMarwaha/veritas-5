@@ -15,7 +15,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   const variantClass = `custom-btn-${variant}`;
   return (
     <button 
-      className={`custom-btn ${variantClass} font-mono uppercase tracking-tight text-[15px] ${className}`}
+      className={`custom-btn ${variantClass} font-mono uppercase tracking-tight text-[0.9375rem] ${className}`}
       {...props}
     >
       <span className="btn-text-1">{children}</span>

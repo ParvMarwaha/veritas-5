@@ -62,24 +62,26 @@ export const TestimonialsSection = () => {
   return (
     <section className="relative w-full bg-[#111] text-white py-20 md:py-28 overflow-hidden border-t border-white/5">
       <motion.div 
-        className="max-w-[1260px] mx-auto px-6 md:px-12"
+        className="max-w-[78.75rem] mx-auto px-6 md:px-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
       >
         
-        {/* Header */}
-        <motion.div variants={itemVariants} className="mb-16">
-          <span className="block text-[#D02717] font-mono text-[15px] md:text-[15px] uppercase tracking-widest mb-6">
-            05 / Testimonials
+        {/* Standardized Header */}
+        <motion.div variants={itemVariants} className="mb-16 flex flex-col text-left w-full">
+          <span className="block text-[#D02717] font-mono text-[0.875rem] uppercase tracking-widest mb-4">
+            05 // TESTIMONIALS
           </span>
-          <h2 className="text-2xl md:text-2xl lg:text-[48px] italic font-serif tracking-tight leading-[1.1] text-white max-w-3xl">
-            What our partners say.
-          </h2>
-          <p className="mt-8 text-[15px] md:text-[15px] text-white/70 font-sans tracking-tight leading-[1.6] max-w-[600px]">
-            Partnerships built on trust, transparency, and scalable design.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 md:gap-12">
+            <h2 className="text-3xl md:text-4xl lg:text-[3rem] font-sans tracking-tight leading-[1.1] text-white max-w-2xl flex-1">
+              What our partners say.
+            </h2>
+            <p className="text-[1rem] md:text-[1.125rem] text-white/70 font-sans tracking-tight leading-[1.6] max-w-md md:mt-4 text-left">
+              Partnerships built on trust, transparency, and scalable design.
+            </p>
+          </div>
         </motion.div>
 
         {/* Interactive Tabbed Interface */}
@@ -96,10 +98,10 @@ export const TestimonialsSection = () => {
                 }`}
               >
                 <div>
-                  <h4 className={`text-[15px] md:text-[15px] font-sans tracking-tight leading-[1.2] mb-2 transition-colors duration-300 ${activeIndex === i ? 'text-white' : 'text-white/60 group-hover:text-white/90'}`}>
+                  <h4 className={`text-[0.9375rem] md:text-[1rem] font-sans tracking-tight leading-[1.2] mb-2 transition-colors duration-300 ${activeIndex === i ? 'text-white' : 'text-white/60 group-hover:text-white/90'}`}>
                     {t.name}
                   </h4>
-                  <p className="text-[15px] md:text-[15px] font-mono uppercase tracking-widest text-white/40">
+                  <p className="text-[0.875rem] font-mono uppercase tracking-widest text-white/40">
                     {t.company}
                   </p>
                 </div>
@@ -115,9 +117,9 @@ export const TestimonialsSection = () => {
           </div>
 
           {/* Right Panel: Active Quote (Spans 8 cols) */}
-          <div className="lg:col-span-8 bg-[#111] p-10 md:p-16 lg:p-24 flex flex-col justify-center min-h-[500px] relative overflow-hidden">
+          <div className="lg:col-span-8 bg-[#111] p-10 md:p-16 lg:p-24 flex flex-col justify-center min-h-[31.25rem] relative overflow-hidden">
             {/* Massive decorative quotes */}
-            <div className="absolute top-12 left-12 text-[#D02717] opacity-20 font-serif text-[180px] leading-none select-none">
+            <div className="absolute top-12 left-12 text-[#D02717] opacity-20 font-serif text-[11.25rem] leading-none select-none">
               “
             </div>
 
@@ -131,14 +133,14 @@ export const TestimonialsSection = () => {
                       : 'opacity-0 translate-y-12 pointer-events-none absolute'
                   }`}
                 >
-                  <p className="text-2xl md:text-2xl lg:text-2xl font-sans tracking-tight leading-[1.3] text-white mb-12">
+                  <p className="text-[1.5rem] md:text-[1.75rem] font-sans tracking-tight leading-[1.3] text-white mb-12">
                     {t.quote}
                   </p>
                   <div className="flex flex-col border-l-2 border-[#D02717] pl-6">
-                    <span className="text-[15px] md:text-[15px] font-sans tracking-tight leading-[1.2] text-white mb-2">
+                    <span className="text-[0.9375rem] md:text-[1rem] font-sans tracking-tight leading-[1.2] text-white mb-2">
                       {t.name}
                     </span>
-                    <span className="text-[15px] md:text-[15px] font-mono uppercase tracking-widest text-white/40">
+                    <span className="text-[0.875rem] font-mono uppercase tracking-widest text-white/40">
                       {t.title}
                     </span>
                   </div>
