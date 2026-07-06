@@ -10,7 +10,7 @@ export const Footer = () => {
         {/* Brand / Logo */}
         <div className="lg:col-span-4 flex flex-col items-start">
           <a href="/" className="mb-8 block">
-            <img src="/logo.png" alt="Veritas Logo" className="h-10 md:h-12 w-auto object-contain" />
+            <img src="/veritasredlogo.png" alt="Veritas Logo" className="h-10 md:h-12 w-auto object-contain" />
           </a>
           <p className="text-white/50 text-[0.9375rem] font-sans max-w-[17.5rem] leading-relaxed">
             Ownership structures designed for growth, not just compliance.

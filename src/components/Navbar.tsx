@@ -73,7 +73,7 @@ export const Navbar = () => {
         <div className={`absolute inset-0 bg-gradient-to-b from-[#111]/90 to-transparent backdrop-blur-md -z-10 transition-opacity duration-500 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}></div>
         
         <a href="/" className="flex items-center">
-          <img src="/logo.png" alt="Veritas Logo" className="h-8 md:h-10 w-auto object-contain" />
+          <img src="/veritasredlogo.png" alt="Veritas Logo" className="h-8 md:h-10 w-auto object-contain" />
         </a>
         
         <div className="flex items-center space-x-8 text-[0.9375rem] uppercase font-mono tracking-tight cursor-pointer">
